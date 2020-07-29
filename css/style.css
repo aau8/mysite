@@ -161,6 +161,7 @@ html, body{
 
 .acc__img-designers.active svg path{
   fill: #2F89CE;
+  stroke: #2F89CE;
 }
 .acc__arrow-designers.active svg path{
   fill: #2F89CE;
