@@ -15,4 +15,13 @@ $(document).ready(function() {
     $('.playlist__bg-up, .acc__img-playlist, .acc__arrow-playlist').toggleClass('active');
     $('.phone__bg-up, .telegram__bg-down, .acc__img-phone, .acc__arrow-phone, .designers__bg-up, .acc__img-designers, .acc__arrow-designers').removeClass('active');
   })
+
+  // слайдер
+  $('.analysis__slider').slick({
+    arrows: false,
+    slidesToShow: 1,
+    infinite: false,
+    variableWidth: true,
+
+  }); 
 });
