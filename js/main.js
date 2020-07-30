@@ -22,6 +22,7 @@ $(document).ready(function() {
     slidesToShow: 1,
     infinite: false,
     variableWidth: true,
+    touchThreshold: 7,
 
   }); 
 });
