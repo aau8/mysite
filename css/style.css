@@ -203,10 +203,10 @@ html, body{
   display: flex;
   flex-direction: column;
 }
-.telegram__content h2{
+.telegram__content h3{
   font-weight: 600;
 }
-.telegram__content h2 span{
+.telegram__content h3 span{
   font-weight: 700;
 }
 .telegram__content p{
@@ -235,14 +235,75 @@ html, body{
 .playlist__content {
   margin-left: 15px;
 }
-.playlist__content h2{
+.playlist__content h3{
   font-weight: 600;
 }
-.playlist__content h2 span{
+.playlist__content h3 span{
   font-weight: 700;
 }
 .playlist__content p{
   font-size: 12px;
   font-weight: 500;
   margin-top: 5px;
+}
+/* стили для раздела "Разборы дизайна" */
+.analysis{
+  margin: 40px 0 0 0;
+}
+.analysis__body{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.analysis__title{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.analysis__title h2{
+  font-size: 20px;
+  font-weight: 700;
+}
+.analysis__slider{
+  margin-top: 30px;
+}
+.analysis__card__img{
+  width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.analysis__card__img img{
+  width: 100%;
+  display: block;
+}
+.analysis__card__content{
+  margin-top: 15px;
+}
+.analysis__card-title{
+  font-size: 14px;
+  font-weight: 600;
+}
+.analysis__card__list{
+  margin-top: 8px;
+}
+.analysis__card__list li{
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  padding-left: 9px;
+  position: relative;
+}
+.analysis__card__list li:last-child{
+  margin: 0;
+}
+.analysis__card__list li:before{
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #2F2F2F;
 }
