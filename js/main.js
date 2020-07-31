@@ -23,6 +23,14 @@ $(document).ready(function() {
     infinite: false,
     variableWidth: true,
     touchThreshold: 7,
-
   }); 
+
+  // figma
+  function figma(){
+    $('.figma').toggleClass('active');
+  }
+  setTimeout(figma, 1000);
+  $('.figma-close, .figma__link-close').click(function(e) {
+    $('.figma').removeClass('active');
+  })
 });

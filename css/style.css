@@ -324,3 +324,66 @@ html, body{
 .slick-track{
   display: flex;
 }
+
+/* стили для figma  */
+.figma{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 360px);
+  transition: 0.3s;
+  /* display: none; */
+}
+.figma.active{
+  transform: translate(-50%, 0);
+}
+.figma-close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+.figma__body{
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px -4px 10px rgba(47, 47, 47, 0.25);
+}
+.figma__content{
+  margin-left: 20px;
+}
+.figma__content p {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2F2F2F;
+  max-width: 186px;
+}
+.figma__link{
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.figma__link a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+.figma__link a span{
+  color: #34A853;
+  padding-right: 5px;
+}
+.figma__link-close{
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.figma__link-img svg path {
+  stroke: #34A853
+}
