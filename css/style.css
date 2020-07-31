@@ -328,7 +328,7 @@ html, body{
 
 /* стили для figma  */
 .figma{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 360px);
