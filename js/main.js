@@ -33,4 +33,16 @@ $(document).ready(function() {
   $('.figma-close, .figma__link-close').click(function(e) {
     $('.figma').removeClass('active');
   })
+
+  // modal-info
+  $(document).mouseup(function(e){
+    var modalInfo = $('.info-modal');
+    if (!modalInfo.is(e.target)
+      && modalInfo.has(e.target).length === 0) {
+        modalInfo.removeClass('visible');
+      }
+    $('.analysis__title').click(function(){
+      $('.info-modal').toggleClass('visible');
+    })
+  })
 });
