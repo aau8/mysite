@@ -329,15 +329,16 @@ html, body{
   padding: 0 16px;
 }
 .analysis__card-end{
-  width: 200px;
-  height: 260px;
+  padding: 0 16px;
+}
+.analysis__card-end__block{
+  max-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #EEEEF5;
   border-radius: 10px;
-  padding: 0 16px;
-  margin: 0 16px;
+  padding: 15px 12px;
 }
 .analysis__card__img{
   width: 200px;
