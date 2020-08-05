@@ -253,6 +253,56 @@ html, body{
   margin: 40px 0 40px 0;
   position: relative;
 }
+.analysis__info{
+  cursor: pointer;
+  position: relative;
+  height: 20px;
+}
+.analysis__info-close{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: all .3s;
+}
+.analysis__info svg{
+  background-color: #F3F2F8;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.analysis__info.active svg{
+  background-color: #2F2F2F;
+}
+.analysis__info svg path{
+  transition: all 0.3s;
+  transform-origin: center center;
+}
+.analysis__info.active svg path{
+  transform: scale(0);
+}
+.analysis__info-close:before,
+.analysis__info-close:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 1.4px;
+  background-color: #F3F2F8;
+  border-radius: 0.3px;
+  transition: all .3s;
+}
+.analysis__info-close:before{
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.analysis__info-close:after{
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.analysis__info-close.visible{
+  transform: scale(1);
+}
 .analysis__body{
   display: flex;
   flex-direction: column;
@@ -410,6 +460,7 @@ html, body{
   transition: all .3s;
   opacity: 0;
   pointer-events: none;
+  border-radius: 5px
 }
 .info-modal.visible{
   top: 38px;
@@ -419,6 +470,7 @@ html, body{
 .info-modal__block {
   padding: 20px 10px;
   background-color: #fff;
+  border-radius: 5px
 }
 .info-modal__block:before{
   content: '';

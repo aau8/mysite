@@ -35,14 +35,18 @@ $(document).ready(function() {
   })
 
   // modal-info
-  $(document).mouseup(function(e){
-    var modalInfo = $('.info-modal');
-    if (!modalInfo.is(e.target)
-      && modalInfo.has(e.target).length === 0) {
-        modalInfo.removeClass('visible');
-      }
-    $('.analysis__title').click(function(){
-      $('.info-modal').toggleClass('visible');
-    })
+  $('.analysis__title').click(function(){
+    $('.info-modal').toggleClass('visible');
+    $('.analysis__info').toggleClass('active');
+    $('.analysis__info-close').toggleClass('visible');
+    
   })
+  // $(document).mouseup(function(e){
+  //   var modalInfo = $('.info-modal');
+  //   if (!modalInfo.is(e.target)
+  //     && modalInfo.has(e.target).length === 0) {
+  //       modalInfo.removeClass('visible');
+  //     }
+
+  // })
 });
