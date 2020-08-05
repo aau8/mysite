@@ -24,6 +24,7 @@ $(document).ready(function() {
     variableWidth: true,
     touchThreshold: 7,
     waitForAnimate: false,
+    swipeToSlide: true,
   }); 
   $('.analysis__card-end-button').on('click', function(){
     $('.acc__info').not($(this).next()).slideUp(500);
