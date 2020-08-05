@@ -23,6 +23,7 @@ $(document).ready(function() {
     infinite: false,
     variableWidth: true,
     touchThreshold: 7,
+    waitForAnimate: false,
   }); 
   $('.analysis__card-end-button').on('click', function(){
     $('.acc__info').not($(this).next()).slideUp(500);
