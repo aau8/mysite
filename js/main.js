@@ -24,7 +24,20 @@ $(document).ready(function() {
     variableWidth: true,
     touchThreshold: 7,
   }); 
-
+  $('.analysis__card-end-button').on('click', function(){
+    $('.acc__info').not($(this).next()).slideUp(500);
+    $('.link__phone').next().slideToggle(500);
+  });
+  $('.analysis__card-end-button').click(function(){
+    $('.phone__bg-up, .telegram__bg-down, .acc__img-phone, .acc__arrow-phone').toggleClass('active');
+    $('.designers__bg-up, .acc__img-designers, .acc__arrow-designers, .playlist__bg-up, .acc__img-playlist, .acc__arrow-playlist').removeClass('active');
+  })
+    // плавный скролл до якорей
+  $("body").on('click', '[href*="#"]', function(e){ // при клике на элементы body содержащие в себе "href=#"  =>
+    var fixed_offset = 100; 
+    $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000); // пользователя переведет на указанный в href якорь со скоростью 1000ms и с отступом 100px сверху
+    e.preventDefault();
+  });
   // figma
   function figma(){
     $('.figma').toggleClass('active');
