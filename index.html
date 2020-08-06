@@ -6,6 +6,7 @@
   <title>Артем Угрюмов</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,7 +19,7 @@
             <div class="profile__img"><img src="img/avatar.webp" alt="аватарка"></div>
             <div class="profile__info">
               <h1 class="profile__name">Артем Угрюмов</h1>
-              <p class="profile__dev">Разработка сайтов</p>
+              <span class="profile__dev">Разработка сайтов</span>
             </div>
           </div>
         </div>
@@ -34,7 +35,7 @@
                   <path d="M18.7798 15.7117L15.0535 12.3237C14.8774 12.1636 14.6459 12.0782 14.408 12.0855C14.1701 12.0929 13.9443 12.1924 13.7784 12.3631L11.5848 14.619C11.0568 14.5182 9.99535 14.1872 8.90268 13.0973C7.81001 12.0037 7.4791 10.9395 7.38101 10.4152L9.6351 8.22066C9.80598 8.05486 9.90564 7.82908 9.913 7.5911C9.92035 7.35312 9.83483 7.12162 9.67451 6.94558L6.28743 3.22025C6.12705 3.04366 5.90415 2.93654 5.66607 2.92165C5.42799 2.90676 5.19348 2.98527 5.01235 3.1405L3.02318 4.84641C2.8647 5.00547 2.77011 5.21716 2.75735 5.44133C2.7436 5.6705 2.48143 11.099 6.69076 15.3102C10.3629 18.9814 14.9628 19.25 16.2296 19.25C16.4148 19.25 16.5284 19.2445 16.5587 19.2427C16.7828 19.2301 16.9944 19.1351 17.1527 18.9759L18.8577 16.9858C19.0135 16.8053 19.0926 16.571 19.0781 16.3329C19.0635 16.0948 18.9564 15.8719 18.7798 15.7117Z" fill="#B2B4B5"/>
                 </svg>
               </div>
-              <p class="acc__text">Способы связи</p>
+              <p class="acc__text title-acc">Способы связи</p>
             </div>
             <div class="acc__arrow acc__arrow-phone">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +61,7 @@
                   <path d="M20.5693 4.23706L17.6646 17.9355C17.4453 18.9021 16.874 19.1427 16.0621 18.6876L11.6359 15.4261L9.50057 17.4804C9.26407 17.7169 9.06676 17.9142 8.61095 17.9142L8.92926 13.4069L17.1318 5.995C17.4886 5.67737 17.0541 5.50068 16.5777 5.819L6.43707 12.2045L2.07145 10.8377C1.12201 10.5414 1.10482 9.88831 2.26945 9.4325L19.3449 2.85381C20.1355 2.5575 20.8271 3.02981 20.5693 4.23775V4.23706Z" fill="#B2B4B5" stroke="#B2B4B5"/>
                 </svg>
               </div>
-              <p class="acc__text">Дизайнерам и разработчикам</p>
+              <p class="acc__text title-acc">Дизайнерам и разработчикам</p>
             </div>
             <div class="acc__arrow acc__arrow-designers">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,26 +84,6 @@
                 <p>А здесь ты можешь делиться своими идеями и просто общаться со мной и с другими единомышленниками.</p>
               </div>
             </a>
-            <!-- <a href="#" class="telegram__card">
-              <div class="telegram__content">
-                <h2>Telegram канал - <span>MinLab</span></h2>
-                <p>Сюда я выкладываю свои наработки, интересные находки и лайфхаки по дизайну и верстке.</p>
-              </div>
-              <div class="telegram__link">
-                <p>Перейти</p>
-                <span class="telegram__link-img"><img src="img/svg/arrow-more.svg" alt="стрелка"></span>
-              </div>
-            </a>
-            <a href="#" class="telegram__card">
-              <div class="telegram__content">
-                <h2>Telegram группа - <span>MinLab</span></h2>
-                <p>А здесь ты можешь делиться своими идеями и просто общаться со мной и с другими единомышленниками.</p>
-              </div>
-              <div class="telegram__link">
-                <p>Перейти</p>
-                <span class="telegram__link-img"><img src="img/svg/arrow-more.svg" alt="стрелка"></span>
-              </div>
-            </a> -->
           </div>
         </div>
         <div class="acc acc__playlist">
@@ -113,7 +94,7 @@
                   <path d="M17.4167 13.75V3.66667C17.416 3.52898 17.3844 3.3932 17.3241 3.26942C17.2638 3.14564 17.1764 3.03703 17.0683 2.95167C16.9618 2.86552 16.8374 2.80433 16.7041 2.77261C16.5709 2.74088 16.4322 2.73942 16.2983 2.76833L8.04833 4.60167C7.84466 4.6476 7.66278 4.76167 7.53276 4.92503C7.40275 5.08838 7.33239 5.29122 7.33333 5.5V13.145C6.70755 12.8496 6.00285 12.765 5.32494 12.904C4.64704 13.043 4.03249 13.3981 3.57347 13.916C3.11446 14.4338 2.83574 15.0866 2.77913 15.7763C2.72252 16.466 2.89106 17.1554 3.25948 17.7412C3.6279 18.327 4.17632 18.7775 4.82249 19.0252C5.46865 19.2729 6.1777 19.3044 6.84328 19.115C7.50886 18.9255 8.09508 18.5254 8.51398 17.9746C8.93289 17.4238 9.1619 16.752 9.16666 16.06C9.17615 15.9013 9.17615 15.7421 9.16666 15.5833V6.23333L15.5833 4.8125V11.3117C14.9572 11.0161 14.2521 10.9316 13.5738 11.0709C12.8956 11.2102 12.2808 11.5658 11.8219 12.0843C11.363 12.6028 11.0847 13.2561 11.0288 13.9463C10.9729 14.6364 11.1424 15.3261 11.5119 15.9117C11.8813 16.4973 12.4308 16.9472 13.0778 17.1939C13.7247 17.4406 14.4343 17.4707 15.0998 17.2797C15.7654 17.0888 16.351 16.687 16.7688 16.1349C17.1865 15.5827 17.4139 14.9099 17.4167 14.2175C17.4254 14.0618 17.4254 13.9057 17.4167 13.75Z" fill="#B2B4B5"/>
                 </svg>
               </div>
-              <p class="acc__text">Рабочий плейлист</p>
+              <p class="acc__text title-acc">Рабочий плейлист</p>
             </div>
             <div class="acc__arrow acc__arrow-playlist">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -140,7 +121,7 @@
     <section class="analysis">
       <div class="analysis__body">
         <div class="analysis__title">
-          <h2>Разборы дизайна:</h2>
+          <h2 class="title-section">Разборы дизайна:</h2>
           <div class="analysis__info">
             <div class="analysis__info-close"></div>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -154,7 +135,7 @@
           <div class="analysis__card analysis__card-1">
             <div class="analysis__card__img"><img src="img/arix.png" alt="arix"></div>
             <div class="analysis__card__content">
-              <h3 class="analysis__card-title">Разбор дизайна шота “Arix”</h3>
+              <h3 class="title-card">Разбор дизайна шота “Arix”</h3>
               <ul class="analysis__card__list">
                 <li>UI KIT по дизайну.</li>
                 <li>Что как делать?</li>
@@ -166,7 +147,7 @@
           <div class="analysis__card analysis__card-2">
             <div class="analysis__card__img"><img src="img/app.png" alt="app"></div>
             <div class="analysis__card__content">
-              <h3 class="analysis__card-title">Разбор дизайна шота “Arix”</h3>
+              <h3 class="title-card">Разбор дизайна шота “Arix”</h3>
               <ul class="analysis__card__list">
                 <li>UI KIT по дизайну.</li>
                 <li>Что как делать?</li>
@@ -178,7 +159,7 @@
           <div class="analysis__card analysis__card-3">
             <div class="analysis__card__img"><img src="img/app.png" alt="app"></div>
             <div class="analysis__card__content">
-              <h3 class="analysis__card-title">Разбор дизайна шота “Arix”</h3>
+              <h3 class="title-card">Разбор дизайна шота “Arix”</h3>
               <ul class="analysis__card__list">
                 <li>UI KIT по дизайну.</li>
                 <li>Что как делать?</li>
@@ -190,7 +171,7 @@
           <div class="analysis__card analysis__card-4">
             <div class="analysis__card__img"><img src="img/app.png" alt="app"></div>
             <div class="analysis__card__content">
-              <h3 class="analysis__card-title">Разбор дизайна шота “Arix”</h3>
+              <h3 class="title-card">Разбор дизайна шота “Arix”</h3>
               <ul class="analysis__card__list">
                 <li>UI KIT по дизайну.</li>
                 <li>Что как делать?</li>

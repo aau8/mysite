@@ -1,25 +1,3 @@
-html, body{
-  width: 100%;
-  background-color: #fafafa;
-}
-.wrapper{
-  max-width: 360px;
-  width: 100%;
-  margin: auto;
-  background-color: #fff;
-  /* box-shadow: 0px 0px 50px rgba(47, 47, 47, 0.1); */
-  position: relative;
-  overflow: hidden;
-}
-*{
-  font-family: 'Raleway', sans-serif;
-  color: #2F2F2F;
-  /* transition: all 0.3s; */
-}
-.container{
-  width: 100%;
-  padding: 0 16px;
-}
 .profile{
   width: 100%;
   padding-top: 30px;
@@ -48,6 +26,7 @@ html, body{
   font-weight: 700;
 }
 .profile__dev{
+  display: block;
   margin-top: 8px;
   font-size: 14px;
   font-weight: 500;
@@ -81,7 +60,6 @@ html, body{
   align-items: center;
 }
 .acc__text{
-  font-size: 12px;
   padding-left: 14px;
 }
 .acc__info {
@@ -101,55 +79,10 @@ html, body{
 .acc__social-img {
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
 }
-
-/* .phone__bg-up,
-.designers__bg-up,
-.designers__bg-down,
-.playlist__bg-down{
-  position: relative;
-}
-
-.phone__bg-up:before,
-.designers__bg-up:before{
-  content: '';
-  position: absolute;
-  bottom: -24px;
-  left: 0;
-  width: 100%;
-  height: 24px;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 47.92%, rgba(156, 156, 156, 0.2) 100%);
-  transition: all 0.3s;
-  opacity: 0;
-  z-index: -2;
-}
-.designers__bg-down:before,
-.music__bg-down:before{
-  content: '';
-  position: absolute;
-  top: -24px;
-  left: 0;
-  width: 100%;
-  height: 24px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 47.92%, rgba(156, 156, 156, 0.2) 100%);
-  opacity: 0;
-  transition: all 0.3s;
-  z-index: -2;
-}
-.phone__bg-up.active:before,
-.designers__bg-up.active:before,
-.designers__bg-down.active:before,
-.music__bg-down.active:before{
-  opacity: 1;
-  z-index: 0;
-} */
-.acc__img-phone,
-.acc__img-designers,
-.acc__img-playlist{
+.acc__img{
   transition: all 0.3s;
 }
-.acc__arrow-phone,
-.acc__arrow-designers,
-.acc__arrow-playlist{
+.acc__arrow{
   transition: all 0.3s;
 }
 .acc__img-phone.active svg path{
@@ -212,8 +145,8 @@ html, body{
   font-weight: 700;
 }
 .telegram__content p{
-  font-size: 12px;
-  font-weight: 500;
+  /* font-size: 12px;
+  font-weight: 500; */
   margin-top: 5px;
 }
 .telegram__link {
@@ -244,8 +177,8 @@ html, body{
   font-weight: 700;
 }
 .playlist__content p{
-  font-size: 12px;
-  font-weight: 500;
+  /* font-size: 12px;
+  font-weight: 500; */
   margin-top: 5px;
 }
 /* стили для раздела "Разборы дизайна" */
@@ -314,10 +247,6 @@ html, body{
   align-items: center;
   width: 100%;
   padding: 0 16px;
-}
-.analysis__title h2{
-  font-size: 20px;
-  font-weight: 700;
 }
 .analysis__slider{
   /* min-width: 0; */
@@ -388,16 +317,12 @@ html, body{
   margin-top: 15px;
   cursor: pointer;
 }
-.analysis__card-title{
-  font-size: 14px;
-  font-weight: 600;
-}
 .analysis__card__list{
   margin-top: 8px;
 }
 .analysis__card__list li{
-  font-size: 12px;
-  font-weight: 500;
+  /* font-size: 12px;
+  font-weight: 500; */
   margin-bottom: 5px;
   padding-left: 9px;
   position: relative;
@@ -413,7 +338,7 @@ html, body{
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #2F2F2F;
+  background-color: var(--title-color);
 }
 
 
@@ -462,7 +387,7 @@ html, body{
   margin-bottom: 12px;
   font-size: 14px;
   font-weight: 600;
-  color: #2F2F2F;
+  color: var(--title-color);
   max-width: 186px;
 }
 .figma__link{
@@ -476,7 +401,6 @@ html, body{
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  font-weight: 600;
 }
 .figma__link a span{
   color: #34A853;

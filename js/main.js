@@ -20,6 +20,7 @@ $(document).ready(function() {
   $('.analysis__slider').slick({
     arrows: false,
     slidesToShow: 1,
+    slidesToScroll: 5,
     infinite: false,
     variableWidth: true,
     touchThreshold: 7,
@@ -56,12 +57,14 @@ $(document).ready(function() {
     $('.analysis__info-close').toggleClass('visible');
     
   })
-  // $(document).mouseup(function(e){
-  //   var modalInfo = $('.info-modal');
-  //   if (!modalInfo.is(e.target)
-  //     && modalInfo.has(e.target).length === 0) {
-  //       modalInfo.removeClass('visible');
-  //     }
 
-  // })
+
+  //  СКРИПТЫ ДЛЯ REFERENCE.HTML
+  $('.header__burger').click(function(){
+    $(this).toggleClass('_active');
+    $('.header__menu').toggleClass('_active');
+    $('.header__bg').toggleClass('_visible');
+    $('html').toggleClass('_lock');
+
+  })
 });
